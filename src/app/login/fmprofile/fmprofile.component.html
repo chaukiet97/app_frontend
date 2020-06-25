@@ -1,0 +1,28 @@
+<div class="border-0 card m-0 pl-3 pr-3 text-center">
+    <div>
+        <img [src]="user.photoUrl" class="img-fluid rounded-circle" alt="" srcset="">
+    </div>
+    <h1>{{ user.name }}</h1>
+    <ul class="list-group list-group-flush">
+        <li class="align-items-center d-flex justify-content-around list-group-item">
+            <div>Họ và tên lót : </div>
+            <div>{{ user.firstName }}</div>
+        </li>
+        <li class="align-items-center d-flex justify-content-around list-group-item">
+            <div>Tên : </div>
+            <div>{{ user.lastName }}</div>
+        </li>
+        <li class="align-items-center d-flex justify-content-around list-group-item">
+            <div>Email : </div>
+            <div>{{ user.email }}</div>
+        </li>
+        <li class="align-items-center d-flex justify-content-around list-group-item">
+            <div>Đăng nhập bằng : </div>
+            <div>{{ user.provider }}</div>
+        </li>
+    </ul>
+    <div class="align-items-center d-flex justify-content-between pt-3">
+        <button type="button" class="btn btn-success" [routerLink]="'/'">Quay lại trang chủ</button>
+        <button type="button" class="btn btn-danger" (click)="logout()">Đăng xuất</button>
+    </div>
+</div>
