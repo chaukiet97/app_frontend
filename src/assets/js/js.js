@@ -56,6 +56,11 @@ function activeTab() {
     });
     
 }
+function loadpage() {
+    $('.loader').load( function(){
+        $(this).addClass("out");
+    })
+}
 function scrolltop() {
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > 200) {

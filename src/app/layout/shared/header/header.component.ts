@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { GlobalsService } from '../../../global';
 
 @Component({
-  selector: 'app-header',
+  selector: '[app-header]',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
